@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mongoose Dashboard Assignment - Edit</title>
+</head>
+<body>
+    <h1>Edit #<%= dog.name %>!</h1>
+    <form action="/<%= dog.id %>" method="POST">
+        Name: <input type="text" name="name" value="<%= dog.name %>">
+        Weight: <input type="text" name="weight" value="<%= dog.weight %>">
+        Color: <input type="text" name="color" value="<%= dog.color %>">
+        <input type="submit" value="Edit dog!">
+    </form>
+    <a href="/">Home</a>
+</body>
+</html>
